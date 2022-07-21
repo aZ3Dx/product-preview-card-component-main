@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Fraunces', serif;
+*/
+
+:root {
+    /*Primary*/
+    --dark-cyan-color: hsl(158, 36%, 37%);
+    --dark-cyan-color-active: #193F31;
+    --cream-color: hsl(30, 38%, 92%);
+    /*Neutral*/
+    --very-dark-blue-color: hsl(212, 21%, 14%);
+    --dark-grayish-blue-color: hsl(228, 12%, 48%);
+    --white-color: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--cream-color);
+}
+
+.principal {
+    max-width: 622px;
+}
+.segundo {
+    background-color: var(--white-color);
+    border-radius: 0 10px 10px 0;
+    padding: 1.7rem 2rem 2.1rem 2rem;
+}
+.product-img {
+    border-radius: 10px 0 0 10px;
+}
+.category span {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 5px;
+    color: var(--dark-grayish-blue-color);
+    font-size: 12px;
+    font-weight: 500;
+}
+.item h1 {
+    color: var(--very-dark-blue-color);
+    font-family: 'Fraunces', serif;
+    font-size: 32px;
+    line-height: 33px;
+}
+.description p {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue-color);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.actual-price {
+    font-family: 'Fraunces', serif;
+    color: var(--dark-cyan-color);
+    font-size: 30px;
+}
+.old-price {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--dark-grayish-blue-color);
+    font-size: 14px;
+    font-weight: 500;
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+.btn-add {
+    background-color: var(--dark-cyan-color);
+    color: var(--white-color);
+    border-radius: 8px;
+    padding: 14px 0;
+}
+.btn-add span {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+.attribution {
+    margin-bottom: 4px;
+}
+
+.btn-add:hover {
+    cursor: pointer;
+    background-color: var(--dark-cyan-color-active);
+}
+
+@media (max-width: 575px) {
+    .principal {
+        max-width: 368px;
+    }
+    .product-img {
+        border-radius: 10px 10px 0 0;
+    }
+    .segundo {
+        padding: 1.3rem 1.64rem 1.8rem 1.64rem;
+        border-radius: 0 0 10px 10px;
+        min-height: 370px;
+    }
+    .attribution {
+        font-size: 12px;
+    }
+}
